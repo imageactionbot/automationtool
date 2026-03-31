@@ -1,3 +1,5 @@
+Here is the fully updated HTML code with all the image paths corrected. You can copy and paste this directly into your `index.html` file.
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +19,9 @@
   <meta name="theme-color" content="#217346" />
   <title>ImageActionBot — Official site · Download automation tool</title>
   <link rel="stylesheet" href="./css/main.css" />
-  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="./assets/logo.svg" />
+  <!-- FIXED: use .png extension (lowercase) to match actual file in assets folder -->
+  <link rel="icon" href="./assets/IMAGEACTIONBOT.png" type="image/png" />
+  <link rel="apple-touch-icon" href="./assets/IMAGEACTIONBOT.png" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -32,8 +35,8 @@
   <header class="site-header">
     <div class="site-header__inner">
       <div class="brand">
-        <img class="brand__logo" src="./assets/IMAGEACTIONBOT.PNG" width="44" height="44" alt="ImageActionBot logo"
-          onerror="this.onerror=null;this.src='./assets/logo.svg'" />
+        <!-- FIXED: correct .png extension, fallback removed because logo.svg may not exist -->
+        <img class="brand__logo" src="./assets/IMAGEACTIONBOT.png" width="44" height="44" alt="ImageActionBot logo" />
         <div class="brand__text">
           <h1>ImageActionBot</h1>
           <span class="brand__tagline">Official site · Light Edition · English UI · v1</span>
@@ -75,8 +78,8 @@
         </div>
         <div class="hero__visual">
           <div class="hero-card">
-            <img class="hero-card__logo" src="./assets/IMAGEACTIONBOT.PNG" width="72" height="72" alt=""
-              onerror="this.onerror=null;this.src='./assets/logo.svg'" />
+            <!-- FIXED: correct .png extension -->
+            <img class="hero-card__logo" src="./assets/IMAGEACTIONBOT.png" width="72" height="72" alt="" />
             <p class="hero-card__title">Windows · ZIP on Telegram</p>
             <p class="hero-card__meta">Open the official post, download the ZIP, extract, and run. See the readme inside the archive for setup.</p>
             <a class="btn btn--download" href="https://t.me/imageactionbot/6" target="_blank" rel="noopener noreferrer">
@@ -211,3 +214,4 @@
   <script src="./js/main.js" defer></script>
 </body>
 </html>
+```
