@@ -1,214 +1,286 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <!-- GitHub Pages: URL without trailing slash breaks relative "assets/" paths; fix before rest of head -->
-  <script>
-    (function () {
-      var p = location.pathname;
-      if (!p || p.endsWith("/")) return;
-      var last = p.split("/").pop() || "";
-      if (last.indexOf(".") !== -1) return;
-      history.replaceState(null, "", p + "/" + location.search + location.hash);
-    })();
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ImageActionBot - Desktop Image Automation Software for Daily Repetitive Work</title>
+  <meta name="description" content="ImageActionBot is an advanced desktop automation software for repetitive work. Automate image-based clicks, OCR text reading, typing, and bulk workflows from CSV/XLSX on Windows.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#1f7a43">
+  <meta name="author" content="ImageActionBot">
+  <meta name="keywords" content="desktop automation software,image automation tool,photo click automation,OCR automation,workflow automation,Windows automation tool,ImageActionBot">
+  <link rel="canonical" href="https://www.imageactionbot.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ImageActionBot - Smart Desktop Automation for Daily Work">
+  <meta property="og:description" content="Automate repetitive screen tasks with image matching, OCR, keyboard input, and data-driven flows.">
+  <meta property="og:url" content="https://www.imageactionbot.com/">
+  <meta property="og:site_name" content="ImageActionBot">
+  <meta property="og:image" content="https://www.imageactionbot.com/IMAGEACTIONBOT.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ImageActionBot - Desktop Image Automation Software">
+  <meta name="twitter:description" content="Save daily time with advanced desktop image automation and OCR workflows.">
+  <meta name="twitter:image" content="https://www.imageactionbot.com/IMAGEACTIONBOT.png">
+  <link rel="icon" href="./IMAGEACTIONBOT.png" type="image/png">
+  <link rel="apple-touch-icon" href="./IMAGEACTIONBOT.png">
+  <link rel="stylesheet" href="./main.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ImageActionBot",
+      "operatingSystem": "Windows",
+      "applicationCategory": "BusinessApplication",
+      "description": "Desktop automation software that automates repetitive image-based tasks using template matching, OCR, and CSV/XLSX workflows.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://www.imageactionbot.com/"
+    }
   </script>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Official ImageActionBot website. Download the Windows desktop automation tool from here (ZIP via Telegram). Templates, EasyOCR, document layouts, CSV/XLSX." />
-  <meta name="theme-color" content="#217346" />
-  <title>ImageActionBot — Official site · Download automation tool</title>
-  <link rel="stylesheet" href="./css/main.css" />
-  <!-- FIXED: use .png extension (lowercase) to match actual file in assets folder -->
-  <link rel="icon" href="./assets/IMAGEACTIONBOT.png" type="image/png" />
-  <link rel="apple-touch-icon" href="./assets/IMAGEACTIONBOT.png" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ImageActionBot",
+      "url": "https://www.imageactionbot.com/",
+      "logo": "https://www.imageactionbot.com/IMAGEACTIONBOT.png",
+      "sameAs": [
+        "https://t.me/imageactionbot",
+        "https://x.com/ImageActionBot",
+        "https://www.instagram.com/imageactionbot",
+        "https://www.youtube.com/@ImageActionBot"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is ImageActionBot used for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ImageActionBot automates repetitive desktop work such as image-based clicking, OCR text extraction, auto typing, and data-driven form workflows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can ImageActionBot auto fill forms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can map workflow steps with typed inputs and CSV/XLSX data to automate repeated form filling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ImageActionBot scan images and read text?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It combines image template matching with OCR to detect screen elements and extract text before automation actions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of automation can it do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can automate clicks, typing, waits, OCR-based copy actions, spreadsheet-driven operations, and repeatable desktop process flows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is ImageActionBot useful for teams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It saves daily manual effort, reduces repetitive errors, and standardizes frequent desktop tasks for faster operations."
+          }
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div id="iab-ad-strip" class="ad-strip is-loading" aria-label="Partner message">
-    <div id="iab-ad-top" class="ad-slot">
-      <div class="ad-slot--shimmer" aria-hidden="true"></div>
-    </div>
-  </div>
-
   <header class="site-header">
-    <div class="site-header__inner">
-      <div class="brand">
-        <!-- FIXED: correct .png extension, fallback removed because logo.svg may not exist -->
-        <img class="brand__logo" src="./assets/IMAGEACTIONBOT.png" width="44" height="44" alt="ImageActionBot logo" />
-        <div class="brand__text">
-          <h1>ImageActionBot</h1>
-          <span class="brand__tagline">Official site · Light Edition · English UI · v1</span>
-        </div>
-      </div>
-      <nav class="nav-links" aria-label="Primary">
+    <div class="container nav-wrap">
+      <a class="brand" href="./index.html" aria-label="ImageActionBot home">
+        <img src="./IMAGEACTIONBOT.png" alt="ImageActionBot logo" width="44" height="44">
+        <span>ImageActionBot</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
         <a href="#features">Features</a>
-        <a href="https://t.me/imageactionbot/6" target="_blank" rel="noopener noreferrer">Download</a>
-        <a href="#follow">Follow</a>
-        <a class="is-cta" href="https://t.me/imageactionbot/6" target="_blank" rel="noopener noreferrer">Download ZIP</a>
+        <a href="#use-cases">Use Cases</a>
+        <a href="./how-to-use.html">How to Use</a>
+        <a href="#social">Social</a>
+        <a class="btn btn-sm js-download-link" data-download-link href="https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup_1.0.0.exe" target="_blank" rel="noopener noreferrer">Download</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero">
-      <div class="hero__inner">
-        <div class="hero__copy">
-          <p class="hero-official">
-            This is the <strong>official</strong> ImageActionBot website.
-            From here you can <strong>download the desktop automation tool</strong> — use the button below (ZIP via Telegram).
-          </p>
-          <h2>Automate repetitive screens — clicks, typing, and OCR — without code</h2>
+      <div class="container hero-grid">
+        <div>
+          <p class="badge">Advanced Desktop Automation Software</p>
+          <h1>Make your daily repetitive computer work easier with smart automation</h1>
           <p class="lead">
-            Build workflows from visual steps: template matching on screen, EasyOCR, document layouts, and bulk-fill from CSV or Excel — in one multi-tab Windows desktop app.
+            ImageActionBot gives you image automation, click automation, OCR-based text workflows,
+            and data-driven task execution in one place. Reduce manual clicking and repetitive typing while increasing output speed.
           </p>
-          <div class="hero__ctas">
-            <a class="btn btn--download" href="https://t.me/imageactionbot/6" target="_blank" rel="noopener noreferrer">
-              Download ImageActionBot (ZIP)
-            </a>
-            <a class="btn btn--primary" href="#follow">Social &amp; updates</a>
+          <div class="cta-row">
+            <a class="btn btn-primary js-download-link" data-download-link href="https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup_1.0.0.exe" target="_blank" rel="noopener noreferrer">Download for Windows</a>
+            <a class="btn btn-ghost" href="./how-to-use.html">Read How to Use</a>
           </div>
-          <p class="hero__note">
-            <strong>ZIP link:</strong>
-            <a href="https://t.me/imageactionbot/6" target="_blank" rel="noopener">t.me/imageactionbot/6</a>
-            — open in Telegram and tap <strong>Download</strong> on the file.
-            <a href="#follow">Follow us</a> for updates.
-          </p>
-        </div>
-        <div class="hero__visual">
-          <div class="hero-card">
-            <!-- FIXED: correct .png extension -->
-            <img class="hero-card__logo" src="./assets/IMAGEACTIONBOT.png" width="72" height="72" alt="" />
-            <p class="hero-card__title">Windows · ZIP on Telegram</p>
-            <p class="hero-card__meta">Open the official post, download the ZIP, extract, and run. See the readme inside the archive for setup.</p>
-            <a class="btn btn--download" href="https://t.me/imageactionbot/6" target="_blank" rel="noopener noreferrer">
-              Open download post
-            </a>
+          <div class="release-line">
+            <span>Version: <strong data-download-version>1.0.0</strong></span>
+            <span>Last Updated: <strong data-download-date>2026-04-01</strong></span>
           </div>
         </div>
+        <aside class="hero-card" aria-label="Release information">
+          <img src="./IMAGEACTIONBOT.png" alt="" width="80" height="80">
+          <h2>Latest Release</h2>
+          <p>Install the official ImageActionBot setup and start your first workflow in minutes.</p>
+          <p><strong data-download-filename>ImageActionBot_Setup_1.0.0.exe</strong></p>
+          <a class="btn btn-primary full js-download-link" data-download-link href="https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup_1.0.0.exe" target="_blank" rel="noopener noreferrer">Download Setup</a>
+        </aside>
       </div>
     </section>
 
-    <div class="stats">
-      <div class="stats__inner">
-        <div class="stat"><strong>Multi-tab</strong><span>Separate workflows</span></div>
-        <div class="stat"><strong>EasyOCR</strong><span>Live &amp; document OCR</span></div>
-        <div class="stat"><strong>.iab bundles</strong><span>Save &amp; share flows</span></div>
-        <div class="stat"><strong>CSV / XLSX</strong><span>Bulk step fill</span></div>
-      </div>
-    </div>
-
-    <section id="features">
-      <div class="section__inner">
-        <div class="section-head">
-          <h2 class="section-title">Built for serious desktop automation</h2>
-          <p class="section-sub">Everything in one app — no scripting required.</p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">📑</div>
-            <h3>Multi-tab workspaces</h3>
-            <p>Run several automations in one window and switch like editor tabs.</p>
+    <section id="features" class="section alt">
+      <div class="container">
+        <h2>Why teams choose ImageActionBot</h2>
+        <p class="section-intro">Reliable automation software designed for real desktop workloads and repetitive operations.</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Image-Based Automation</h3>
+            <p>Template matching detects exact UI elements and automates click actions with precision.</p>
           </article>
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">🎯</div>
-            <h3>Template matching</h3>
-            <p>PNG anchors find the UI; clicks use offsets you define on the match.</p>
+          <article class="card">
+            <h3>OCR + Smart Typing</h3>
+            <p>Read text from selected screen regions and apply fast, reliable typing automation to target fields.</p>
           </article>
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">🔎</div>
-            <h3>EasyOCR</h3>
-            <p>Read text from a screen region vs your anchor; optional find/replace before typing.</p>
+          <article class="card">
+            <h3>Data Import Workflows</h3>
+            <p>Map step values from CSV/XLSX input and execute repetitive tasks in bulk.</p>
           </article>
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">📄</div>
-            <h3>Document layouts</h3>
-            <p>Straighten scans, field ROIs, import — Document OCR types into forms.</p>
+          <article class="card">
+            <h3>Multi-Tab Workflow Builder</h3>
+            <p>Build, test, and manage multiple automation flows in one app without coding.</p>
           </article>
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">📊</div>
-            <h3>CSV &amp; XLSX import</h3>
-            <p>Headers match step names; the first data row fills relevant steps.</p>
+          <article class="card">
+            <h3>Productivity First</h3>
+            <p>Reduce manual errors in daily tasks and improve process speed with consistent execution.</p>
           </article>
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">💾</div>
-            <h3>Bundles (.iab)</h3>
-            <p>Export flows and images in one file for backup or sharing.</p>
+          <article class="card">
+            <h3>Local Desktop Control</h3>
+            <p>A focused, simple, and effective tool built for practical Windows desktop use cases.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="download" class="download">
-      <div class="section__inner">
-        <div class="section-head">
-          <h2 class="section-title">Download the automation tool</h2>
-          <p class="section-sub">This is the official ImageActionBot site — get the v1 package from the Telegram post below.</p>
-        </div>
-        <div class="download-grid">
-          <div class="download-box">
-            <h3>Quick start</h3>
-            <ol>
-              <li>Open <a href="https://t.me/imageactionbot/6" target="_blank" rel="noopener"><strong>t.me/imageactionbot/6</strong></a> (v1 download post).</li>
-              <li>In Telegram, use <strong>Download</strong> on the attached ZIP (or file).</li>
-              <li>Extract the folder on your PC and follow the readme / installer inside for Windows setup.</li>
-            </ol>
-            <p style="margin: 0 0 18px; font-size: 0.95rem; color: var(--tx2);">
-              For a <strong>source</strong> build, install Python packages from your release notes (e.g. Pillow, PyAutoGUI, OpenCV, EasyOCR, pyperclip, openpyxl as needed).
-            </p>
-            <a class="btn btn--download" href="https://t.me/imageactionbot/6" target="_blank" rel="noopener noreferrer">
-              Download ImageActionBot (ZIP)
-            </a>
-          </div>
-          <div class="download-box">
-            <h3>Tech highlights</h3>
-            <ul class="pill-list">
-              <li>Tkinter UI</li>
-              <li>OpenCV + PyAutoGUI</li>
-              <li>EasyOCR</li>
-              <li>Optional Tesseract / openpyxl</li>
+    <section id="use-cases" class="section">
+      <div class="container">
+        <h2>Automation use-cases for daily operations</h2>
+        <div class="split-grid">
+          <div class="panel">
+            <h3>Office and back-office workflows</h3>
+            <ul>
+              <li>Form filling automation from spreadsheet data</li>
+              <li>Repetitive click sequences in web and desktop tools</li>
+              <li>Data transfer between legacy systems</li>
+              <li>Document-based value extraction with OCR</li>
             </ul>
-            <p style="margin: 18px 0 0; font-size: 0.95rem; color: var(--tx2);">
-              Stack details live in your package readme. Source builds may need <code>pip install …</code> per release notes.
-            </p>
+          </div>
+          <div class="panel">
+            <h3>Power users and operators</h3>
+            <ul>
+              <li>Image anchor based navigation in repetitive interfaces</li>
+              <li>Auto typing with delay controls and validation flow</li>
+              <li>Routine QA tasks and checklist automation</li>
+              <li>High-frequency process standardization</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="follow" class="social-section">
-      <div class="section__inner">
-        <div class="section-head">
-          <h2 class="section-title">Follow ImageActionBot</h2>
-          <p class="section-sub">Official presence — website, Telegram, and social.</p>
+    <section class="section alt">
+      <div class="container">
+        <h2>How quickly can you start?</h2>
+        <ol class="steps">
+          <li><strong>Download:</strong> Use the latest setup from official link.</li>
+          <li><strong>Install:</strong> Launch on Windows and configure your first workspace.</li>
+          <li><strong>Capture:</strong> Add image anchors and step actions.</li>
+          <li><strong>Run:</strong> Test on sample data, then execute full workflow.</li>
+        </ol>
+        <a class="btn btn-primary js-download-link" data-download-link href="https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup_1.0.0.exe" target="_blank" rel="noopener noreferrer">Start With Latest Setup</a>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <h2>Frequently asked questions</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Is this tool useful for repetitive daily work?</summary>
+            <p>Yes. ImageActionBot is built exactly for repetitive desktop workflows where the same click and typing pattern repeat every day.</p>
+          </details>
+          <details>
+            <summary>Can it automatically fill forms?</summary>
+            <p>Yes. You can build step-based automation to fill input fields, and run bulk form filling with CSV/XLSX data.</p>
+          </details>
+          <details>
+            <summary>Does it scan images and perform OCR text reading?</summary>
+            <p>Yes. It detects UI elements using image/template matching and reads text with OCR for use in your workflow.</p>
+          </details>
+          <details>
+            <summary>What exactly can ImageActionBot automate?</summary>
+            <p>It automates clicks, typing, wait controls, OCR read-and-type actions, document field flows, and repetitive desktop sequences.</p>
+          </details>
+          <details>
+            <summary>Why ImageActionBot useful for business daily tasks?</summary>
+            <p>It reduces manual effort in daily repetitive tasks, improves accuracy, and standardizes process speed across teams.</p>
+          </details>
+          <details>
+            <summary>Can non-coders use it?</summary>
+            <p>Yes. The tool uses a visual workflow approach, so practical automation can be set up without coding knowledge.</p>
+          </details>
         </div>
-        <ul class="social-grid">
-          <li><a class="social-card" href="https://www.imageactionbot.com" target="_blank" rel="noopener noreferrer"><span class="social-card__icon" aria-hidden="true">🌐</span><strong>Website</strong><span>imageactionbot.com</span></a></li>
-          <li><a class="social-card" href="https://t.me/imageactionbot" target="_blank" rel="noopener noreferrer"><span class="social-card__icon" aria-hidden="true">✈️</span><strong>Telegram channel</strong><span>@imageactionbot</span></a></li>
-          <li><a class="social-card" href="https://t.me/imageactionbot/6" target="_blank" rel="noopener noreferrer"><span class="social-card__icon" aria-hidden="true">⬇️</span><strong>ZIP download (v1)</strong><span>t.me/imageactionbot/6</span></a></li>
-          <li><a class="social-card" href="https://x.com/ImageActionBot" target="_blank" rel="noopener noreferrer"><span class="social-card__icon" aria-hidden="true">𝕏</span><strong>X (Twitter)</strong><span>@ImageActionBot</span></a></li>
-          <li><a class="social-card" href="https://www.instagram.com/imageactionbot" target="_blank" rel="noopener noreferrer"><span class="social-card__icon" aria-hidden="true">📷</span><strong>Instagram</strong><span>@imageactionbot</span></a></li>
-          <li><a class="social-card" href="https://www.youtube.com/@ImageActionBot" target="_blank" rel="noopener noreferrer"><span class="social-card__icon" aria-hidden="true">▶️</span><strong>YouTube</strong><span>@ImageActionBot</span></a></li>
-        </ul>
+      </div>
+    </section>
+
+    <section id="social" class="section alt">
+      <div class="container">
+        <h2>Official social and updates</h2>
+        <div class="social-grid">
+          <a class="social-card" href="https://www.imageactionbot.com" target="_blank" rel="noopener noreferrer"><strong>Website</strong><span>imageactionbot.com</span></a>
+          <a class="social-card" href="https://t.me/imageactionbot" target="_blank" rel="noopener noreferrer"><strong>Telegram</strong><span>@imageactionbot</span></a>
+          <a class="social-card" href="https://x.com/ImageActionBot" target="_blank" rel="noopener noreferrer"><strong>X (Twitter)</strong><span>@ImageActionBot</span></a>
+          <a class="social-card" href="https://www.instagram.com/imageactionbot" target="_blank" rel="noopener noreferrer"><strong>Instagram</strong><span>@imageactionbot</span></a>
+          <a class="social-card" href="https://www.youtube.com/@ImageActionBot" target="_blank" rel="noopener noreferrer"><strong>YouTube</strong><span>@ImageActionBot</span></a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="site-footer__inner">
-      <div>
-        <strong>ImageActionBot</strong> — desktop automation. Runs locally; use responsibly.
-      </div>
+    <div class="container footer-wrap">
+      <p><strong>ImageActionBot</strong> - Advanced desktop automation software for repetitive digital tasks.</p>
       <div class="footer-links">
-        <a href="https://www.imageactionbot.com" target="_blank" rel="noopener">Website</a>
-        <a href="https://t.me/imageactionbot" target="_blank" rel="noopener">Telegram</a>
-        <a href="https://t.me/imageactionbot/6" target="_blank" rel="noopener">Telegram post</a>
-        <a href="https://x.com/ImageActionBot" target="_blank" rel="noopener">X</a>
-        <a href="https://www.instagram.com/imageactionbot" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.youtube.com/@ImageActionBot" target="_blank" rel="noopener">YouTube</a>
+        <a href="./how-to-use.html">How to Use</a>
+        <a class="js-download-link" data-download-link href="https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup_1.0.0.exe" target="_blank" rel="noopener noreferrer">Download</a>
+        <a href="https://t.me/imageactionbot" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="https://x.com/ImageActionBot" target="_blank" rel="noopener noreferrer">X</a>
       </div>
     </div>
   </footer>
 
-  <script src="./js/main.js" defer></script>
+  <script src="./main.js" defer></script>
 </body>
 </html>
