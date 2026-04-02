@@ -1,0 +1,16 @@
+{
+  "name": "ImageActionBot",
+  "short_name": "ImageActionBot",
+  "description": "Image matching desktop automation software for Windows.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f8f6",
+  "theme_color": "#1f7a43",
+  "icons": [
+    {
+      "src": "/IMAGEACTIONBOT.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -5,22 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>How to Use ImageActionBot - Advanced Practical Guide</title>
   <meta name="description" content="Step-by-step advanced guide to use ImageActionBot: setup, image anchors, OCR extraction, document layouts, CSV/XLSX input, optimization, and troubleshooting.">
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="theme-color" content="#1f7a43">
+  <meta name="author" content="ImageActionBot Technologies">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="canonical" href="https://www.imageactionbot.com/how-to-use.html">
+  <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
   <meta property="og:title" content="How to Use ImageActionBot - Advanced Guide">
   <meta property="og:description" content="Learn how to automate repetitive desktop tasks with image matching, OCR, and data-driven workflows.">
   <meta property="og:url" content="https://www.imageactionbot.com/how-to-use.html">
   <meta property="og:image" content="https://www.imageactionbot.com/IMAGEACTIONBOT.png">
+  <meta property="og:image:alt" content="ImageActionBot automation guide cover image">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How to Use ImageActionBot">
   <meta name="twitter:description" content="Complete setup and advanced usage guide for ImageActionBot automation workflows.">
   <meta name="twitter:image" content="https://www.imageactionbot.com/IMAGEACTIONBOT.png">
-  <link rel="icon" href="./IMAGEACTIONBOT.png" type="image/png">
+  <meta name="twitter:image:alt" content="ImageActionBot automation guide cover image">
+  <link rel="icon" href="./IMAGEACTIONBOT.png" type="image/png" sizes="512x512">
+  <link rel="shortcut icon" href="./IMAGEACTIONBOT.png" type="image/png">
+  <link rel="apple-touch-icon" href="./IMAGEACTIONBOT.png">
+  <link rel="manifest" href="./site.webmanifest">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5368355682383000"
      crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./main.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "How to Use ImageActionBot: Advanced Practical Guide",
+      "author": {
+        "@type": "Organization",
+        "name": "ImageActionBot Technologies"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ImageActionBot Technologies",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.imageactionbot.com/IMAGEACTIONBOT.png"
+        }
+      },
+      "mainEntityOfPage": "https://www.imageactionbot.com/how-to-use.html",
+      "dateModified": "2026-04-02",
+      "about": [
+        "Desktop automation",
+        "Image matching",
+        "OCR workflow",
+        "CSV XLSX automation",
+        "Document layout extraction"
+      ]
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -32,11 +68,13 @@
         <span>ImageActionBot</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
+        <a href="./index.html">Home</a>
         <a href="./index.html#features">Features</a>
         <a href="./index.html#use-cases">Use Cases</a>
-        <a href="./how-to-use.html" aria-current="page">How to Use</a>
+        <a href="./how-to-use.html">How to Use</a>
+        <a href="./automation-software.html">Automation Software</a>
         <a href="./index.html#social">Social</a>
-        <a class="btn btn-sm js-download-link" data-download-link href="https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup.exe" target="_blank" rel="noopener noreferrer">Download</a>
+        <a class="btn btn-sm js-download-link" data-download-link href="#" target="_blank" rel="noopener noreferrer">Download</a>
       </nav>
     </div>
   </header>
@@ -48,8 +86,8 @@
         <h1>How to use ImageActionBot like a power user</h1>
         <p class="lead">This guide gives you a complete path from beginner to advanced workflows, so you can turn daily repetitive work into fast, reliable, and scalable automation.</p>
         <div class="release-line">
-          <span>Current Version: <strong data-download-version>1.0.0</strong></span>
-          <span>Last Updated: <strong data-download-date>2026-04-01</strong></span>
+          <span>Current Version: <strong data-download-version>1.0.1</strong></span>
+          <span>Last Updated: <strong data-download-date>2026-04-02</strong></span>
         </div>
       </div>
     </section>
@@ -62,7 +100,7 @@
           <li>After launch, start with a clean workspace.</li>
           <li>Keep system scaling at 100% or a predictable zoom level for stable image matching.</li>
         </ul>
-        <p><a class="btn btn-primary js-download-link" data-download-link href="https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup_1.0.0.exe" target="_blank" rel="noopener noreferrer">Download Latest Setup</a></p>
+        <p><a class="btn btn-primary js-download-link" data-download-link href="#" target="_blank" rel="noopener noreferrer">Download Latest Setup</a></p>
       </div>
     </section>
 
@@ -76,6 +114,21 @@
           <li>Run a short test before full production execution.</li>
         </ol>
         <p>Tip: Add a verification step between critical actions to reduce failure rates.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container prose">
+        <h2>2.5) Core product modules in ImageActionBot v1.0</h2>
+        <ul>
+          <li><strong>Light Edition UI:</strong> clean English interface with Excel-style green/white visual hierarchy.</li>
+          <li><strong>Multi-tab projects:</strong> keep different automations separated, reducing accidental edits in active jobs.</li>
+          <li><strong>Live preview overlay:</strong> monitor running state, status messages, and progress without switching windows.</li>
+          <li><strong>EasyOCR + anchor snip:</strong> detect a known image and OCR a region relative to its corner for better control.</li>
+          <li><strong>Document layout engine:</strong> scan straighten, reusable field snips, and layout-based OCR value extraction.</li>
+          <li><strong>Data import:</strong> CSV/XLSX headers map to step names for fast bulk input workflows.</li>
+          <li><strong>Bundle portability:</strong> save/load workflow bundles to move processes between systems quickly.</li>
+        </ul>
       </div>
     </section>
 
@@ -164,7 +217,7 @@
         <h2>Start automating your daily work today</h2>
         <p>Convert manual repetitive processes into structured automation and unlock daily productivity gains.</p>
         <div class="cta-row">
-          <a class="btn btn-primary js-download-link" data-download-link href="https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup.exe" target="_blank" rel="noopener noreferrer">Download ImageActionBot</a>
+          <a class="btn btn-primary js-download-link" data-download-link href="#" target="_blank" rel="noopener noreferrer">Download ImageActionBot</a>
           <a class="btn btn-ghost" href="./index.html">Back to Landing Page</a>
         </div>
       </div>
@@ -180,13 +233,14 @@
         <a href="./privacy-policy.html">Privacy Policy</a>
         <a href="./terms.html">Terms</a>
         <a href="./index.html">Home</a>
-        <a class="js-download-link" data-download-link href="https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup.exe" target="_blank" rel="noopener noreferrer">Download</a>
+        <a href="./automation-software.html">Automation Software</a>
+        <a class="js-download-link" data-download-link href="#" target="_blank" rel="noopener noreferrer">Download</a>
         <a href="https://t.me/imageactionbot" target="_blank" rel="noopener noreferrer">Telegram</a>
         <a href="https://x.com/ImageActionBot" target="_blank" rel="noopener noreferrer">X</a>
         <a href="https://www.instagram.com/imageactionbot" target="_blank" rel="noopener noreferrer">Instagram</a>
         <a href="https://www.youtube.com/@ImageActionBot" target="_blank" rel="noopener noreferrer">YouTube</a>
       </div>
-      <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">© 2026 ImageActionBot Technologies. All rights reserved.</p>
+      <p class="footer-note">© 2026 ImageActionBot Technologies. All rights reserved.</p>
     </div>
   </footer>
 

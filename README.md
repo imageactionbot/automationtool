@@ -15,14 +15,16 @@ Example:
 
 ```json
 {
-  "version": "1.0.0",
-  "file_name": "ImageActionBot_Setup_1.0.1.exe",
-  "download_url": "https://your-link/ImageActionBot_Setup.exe",
+  "version": "1.0.1",
+  "file_name": "imageactionbot_setup.exe",
+  "download_url": "https://your-link/imageactionbot_setup.exe",
   "last_updated": "2026-04-10"
 }
 ```
 
 All download buttons and release labels update automatically via `main.js`.
+
+> Note: File naming helps consistency, but "Unknown Publisher" warnings are controlled by code signing (Authenticode), not by filename alone.
 
 ## Optional ad metadata
 
