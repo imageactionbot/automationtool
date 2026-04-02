@@ -4,9 +4,9 @@
   var FALLBACK = {
     product_name: "ImageActionBot",
     version: "1.0.0",
-    file_name: "ImageActionBot_Setup_1.0.0.exe",
-    download_url: "https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup_1.0.0.exe",
-    last_updated: "2026-04-01"
+    file_name: "ImageActionBot_Setup.exe",
+    download_url: "https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup.exe",
+    last_updated: "2026-04-02"
   };
 
   function setText(selector, value) {
