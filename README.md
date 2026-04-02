@@ -17,7 +17,7 @@ Example:
 {
   "version": "1.0.0",
   "file_name": "ImageActionBot_Setup_1.0.1.exe",
-  "download_url": "https://your-link/ImageActionBot_Setup_1.0.1.exe",
+  "download_url": "https://your-link/ImageActionBot_Setup.exe",
   "last_updated": "2026-04-10"
 }
 ```
