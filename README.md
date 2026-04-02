@@ -15,10 +15,10 @@ Example:
 
 ```json
 {
-  "version": "1.0.1",
+  "version": "1.0.0",
   "file_name": "imageactionbot_setup.exe",
   "download_url": "https://your-link/imageactionbot_setup.exe",
-  "last_updated": "2026-04-10"
+  "last_updated": "2026-04-03"
 }
 ```
 
@@ -36,5 +36,5 @@ All download buttons and release labels update automatically via `main.js`.
 - `how-to-use.html` - advanced usage guide
 - `main.css` - responsive styling
 - `main.js` - JSON metadata loader
-- `download.json` - editable release details
+- `download.json` - single source release metadata
 - `ad.json` - optional ad metadata

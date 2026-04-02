@@ -1,11 +1,11 @@
 {
   "product_name": "ImageActionBot",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "file_name": "imageactionbot_setup.exe",
   "download_url": "https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup.exe",
-  "last_updated": "2026-04-02",
+  "last_updated": "2026-04-03",
   "changelog": [
-    "Single source release metadata at root download.json",
-    "Stable installer filename for download links"
+    "Single source release metadata in root download.json",
+    "Version and date now sync across release labels and JSON-LD metadata"
   ]
 }

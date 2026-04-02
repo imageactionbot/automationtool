@@ -38,14 +38,37 @@
     setText("[data-download-link-text]", url);
   }
 
+  function syncJsonLdReleaseMetadata(release) {
+    var scripts = document.querySelectorAll('script[type="application/ld+json"][data-release-jsonld]');
+    scripts.forEach(function (script) {
+      try {
+        var data = JSON.parse(script.textContent);
+        if (data && typeof data === "object") {
+          if (Object.prototype.hasOwnProperty.call(data, "dateModified")) {
+            data.dateModified = release.last_updated;
+          }
+          if (Object.prototype.hasOwnProperty.call(data, "softwareVersion")) {
+            data.softwareVersion = release.version;
+          }
+          script.textContent = JSON.stringify(data, null, 2);
+        }
+      } catch (error) {
+        // Ignore invalid JSON-LD blocks and keep original markup.
+      }
+    });
+  }
+
   function applyReleaseData(data) {
     var release = Object.assign({}, FALLBACK, data || {});
     currentRelease = release;
     setDownloadLinks(release.download_url, release.file_name);
     setText("[data-download-version]", release.version);
+    setText("[data-release-version]", release.version);
     setText("[data-download-date]", release.last_updated);
+    setText("[data-release-date]", release.last_updated);
     setText("[data-download-filename]", release.file_name);
     setText("[data-download-product]", release.product_name);
+    syncJsonLdReleaseMetadata(release);
   }
 
   function forceDownload(url, fileName) {
@@ -142,10 +165,7 @@
   }
 
   function loadReleaseData() {
-    return fetchJson("./download.json").catch(function () {
-      // Backward-compatible fallback for older deployments.
-      return fetchJson("./js/download.json");
-    });
+    return fetchJson("./download.json");
   }
 
   function init() {
