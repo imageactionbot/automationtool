@@ -132,6 +132,47 @@
       </div>
     </section>
 
+    <section class="section alt" id="iab-workflow-bundle">
+      <div class="container prose">
+        <h2>2.6) IAB workflow bundle file: meaning, uses, and safe adoption</h2>
+        <p>
+          An <strong>IAB file</strong> is an ImageActionBot workflow bundle package. It stores workflow steps,
+          action settings, and execution structure so the same automation can be exported, shared, and imported
+          on another machine without rebuilding each step manually.
+        </p>
+
+        <h3>Where IAB bundles help most</h3>
+        <ul>
+          <li><strong>Team handover:</strong> pass mature workflows to operators with less setup time.</li>
+          <li><strong>Backup and recovery:</strong> keep portable workflow copies before major changes.</li>
+          <li><strong>Multi-system rollout:</strong> deploy a consistent process across many desktops.</li>
+          <li><strong>Faster onboarding:</strong> new users start from an existing workflow baseline.</li>
+        </ul>
+
+        <h3>How to use an IAB bundle step by step</h3>
+        <ol>
+          <li>Build and test your workflow in a source environment.</li>
+          <li>Export it as an IAB workflow bundle file.</li>
+          <li>Transfer the file to the target machine or teammate.</li>
+          <li>Import the IAB file and verify anchors, OCR regions, and data mappings.</li>
+          <li>Run a dry test batch before production execution.</li>
+        </ol>
+
+        <h3>Best-practice checks before production</h3>
+        <ul>
+          <li><strong>Image matching reliability:</strong> tune confidence and offset click for dynamic UI states.</li>
+          <li><strong>OCR + anchor stability:</strong> validate extraction regions relative to stable visual anchors.</li>
+          <li><strong>CSV/XLSX mappings:</strong> ensure column names and step variables match exactly.</li>
+          <li><strong>Document layouts:</strong> re-check template alignment if scans/layouts differ per machine.</li>
+          <li><strong>Environment parity:</strong> resolution, scaling, and application versions should be comparable.</li>
+        </ul>
+
+        <p>
+          Tip: use semantic file names like <code>invoice_apr_ops_v3.iab</code> and keep versioned backups before edits.
+        </p>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container prose">
         <h2>3) Advanced image automation strategy</h2>

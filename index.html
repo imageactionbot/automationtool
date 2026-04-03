@@ -133,6 +133,22 @@
             "@type": "Answer",
             "text": "After image matching finds an image, you can automate: left click, right click, double click, mouse hover, typing text, OCR text reading, copying to clipboard, waiting for element, conditional branching, and complete workflow execution with data from CSV/XLSX files."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What is an IAB file in ImageActionBot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An IAB file is an ImageActionBot workflow bundle package used to export and import complete automation workflows. It helps teams share repeatable processes, keep backups, and deploy workflows on multiple machines with less setup effort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should I use IAB workflow bundles safely?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Export a tested workflow as an IAB bundle, import it on the target machine, then validate image anchors, OCR regions, and CSV/XLSX mappings before production. Always run a dry test first and retune if UI layout or resolution differs."
+          }
         }
       ]
     }
@@ -420,6 +436,22 @@
           <details>
             <summary>Do I need coding knowledge to use image matching automation?</summary>
             <p><strong>No.</strong> ImageActionBot uses a visual workflow builder. You can create automation workflows without any coding. Capture images, set actions, map data fields — everything is visual and easy to use.</p>
+          </details>
+          <details>
+            <summary>What is an IAB file in ImageActionBot?</summary>
+            <p>
+              An <strong>IAB file</strong> is a workflow bundle package for export/import of complete automation flows.
+              It is useful for team handover, reusable deployment, and workflow backup. See the detailed guide in
+              <a href="./how-to-use.html#iab-workflow-bundle">IAB workflow bundle section</a>.
+            </p>
+          </details>
+          <details>
+            <summary>How should I use IAB workflow bundles safely?</summary>
+            <p>
+              Export only tested workflows, import on the target system, then validate image anchors, OCR regions,
+              and CSV/XLSX mappings before production. Run a dry test first, especially if resolution, scaling, or UI
+              layout differs across machines.
+            </p>
           </details>
         </div>
       </div>

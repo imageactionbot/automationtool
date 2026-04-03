@@ -116,11 +116,32 @@
 
     <section class="section">
       <div class="container prose">
+        <h2>IAB workflow bundles for deployment and handover</h2>
+        <p>
+          ImageActionBot uses <strong>IAB workflow bundle files</strong> to package reusable automation workflows for
+          transfer between team members and machines. This reduces setup duplication and helps operations teams run
+          consistent processes with better governance.
+        </p>
+        <ul>
+          <li><strong>Operational continuity:</strong> preserve working workflows as portable backup artifacts.</li>
+          <li><strong>Faster rollout:</strong> distribute tested process bundles instead of rebuilding manually.</li>
+          <li><strong>Safer adoption:</strong> import, validate, and dry-run bundles before production execution.</li>
+        </ul>
+        <p>
+          For the detailed definition, use cases, and step-by-step import/export process, read
+          <a href="./how-to-use.html#iab-workflow-bundle">IAB workflow bundle guidance</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container prose">
         <h2>Implementation Checklist</h2>
         <ol>
           <li>Define process scope and identify repetitive UI actions.</li>
           <li>Create stable image anchors for key interaction points.</li>
           <li>Add OCR and data import steps where variable values are required.</li>
+          <li>Use multi-tab projects and live preview controls to monitor execution safely.</li>
           <li>Test with sample batches and add fallback checks.</li>
           <li>Deploy workflow bundles to production operators.</li>
         </ol>
