@@ -75,6 +75,22 @@ img {
   z-index: 9999;
 }
 
+a:focus-visible:not(.skip-link),
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.site-header a:focus-visible:not(.skip-link),
+.site-header button:focus-visible {
+  outline-color: #c8f5dc;
+}
+
+.site-footer a:focus-visible {
+  outline-color: #c8f5dc;
+}
+
 .container {
   width: min(var(--maxw), calc(100% - 2.2rem));
   margin-inline: auto;
