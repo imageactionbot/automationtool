@@ -9,6 +9,7 @@
   <meta name="theme-color" content="#1f7a43">
   <meta name="author" content="ImageActionBot Technologies">
   <link rel="canonical" href="https://www.imageactionbot.com/">
+  <link rel="preload" as="image" href="./assets/ImageActionBot_UI.png" fetchpriority="high">
   <meta name="format-detection" content="telephone=no">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta property="og:locale" content="en_US">
@@ -17,15 +18,15 @@
   <meta property="og:description" content="Advanced image matching technology finds any image on screen and automates clicks, typing, OCR reading, and form filling. Complete desktop automation software.">
   <meta property="og:url" content="https://www.imageactionbot.com/">
   <meta property="og:site_name" content="ImageActionBot">
-  <meta property="og:image" content="https://www.imageactionbot.com/iab.png">
-  <meta property="og:image:width" content="512">
-  <meta property="og:image:height" content="512">
-  <meta property="og:image:alt" content="ImageActionBot — image matching automation for Windows">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://www.imageactionbot.com/assets/ImageActionBot_UI.png">
+  <meta property="og:image:width" content="1919">
+  <meta property="og:image:height" content="984">
+  <meta property="og:image:alt" content="ImageActionBot main window: workflow tabs, step list, and controls">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ImageActionBot | Image matching automation for Windows">
   <meta name="twitter:description" content="Find image and click automatically with advanced image matching. OCR text reading, auto fill forms, complete desktop automation.">
-  <meta name="twitter:image" content="https://www.imageactionbot.com/iab.png">
-  <meta name="twitter:image:alt" content="ImageActionBot desktop automation software logo">
+  <meta name="twitter:image" content="https://www.imageactionbot.com/assets/ImageActionBot_UI.png">
+  <meta name="twitter:image:alt" content="ImageActionBot main application window on Windows">
   <link rel="icon" href="https://www.imageactionbot.com/iab.png" type="image/png" sizes="512x512">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5368355682383000"
      crossorigin="anonymous"></script>
@@ -44,6 +45,12 @@
       "applicationSubCategory": "Desktop Automation Software",
       "description": "ImageActionBot v1.0 Light Edition is Windows automation software with template matching, screen OCR, auto typing, CSV/XLSX data import, document layout extraction, and multi-step workflow execution.",
       "softwareRequirements": ".NET Framework 4.7.2 or newer, Windows 10/11",
+      "screenshot": [
+        "https://www.imageactionbot.com/assets/ImageActionBot_UI.png",
+        "https://www.imageactionbot.com/assets/ImageActionBot_StepSetup.png",
+        "https://www.imageactionbot.com/assets/ImageActionBot_output.png",
+        "https://www.imageactionbot.com/assets/ImageActionBot_Workflow.png"
+      ],
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -161,6 +168,7 @@
         <a href="./index.html">Home</a>
         <a href="./index.html#features">Features</a>
         <a href="./index.html#use-cases">Use Cases</a>
+        <a href="./index.html#screenshots">Screenshots</a>
         <a href="./how-to-use.html">How to Use</a>
         <a href="./automation-software.html">Automation Software</a>
         <a href="./index.html#social">Social</a>
@@ -187,13 +195,37 @@
             <span>Last Updated: <strong data-download-date>2026-04-03</strong></span>
           </div>
         </div>
-        <aside class="hero-card" aria-label="Release information">
-          <img src="./iab.png" alt="ImageActionBot image matching and automation tool" width="80" height="80">
-          <h2>Latest Release</h2>
-          <p>Advanced image matching automation. Find image → click → OCR → auto fill. Start automating now.</p>
-          <p><strong data-download-filename>imageactionbot_setup.exe</strong></p>
-          <a class="btn btn-primary full js-download-link" data-download-link href="#" target="_blank" rel="noopener noreferrer">Download Setup</a>
+        <aside class="hero-card hero-card-visual" aria-label="Application preview and download">
+          <figure class="hero-shot">
+            <img src="./assets/ImageActionBot_UI.png" width="1919" height="984" alt="ImageActionBot main window showing workflow tabs, automation steps, and control toolbar on Windows" fetchpriority="high" decoding="async">
+          </figure>
+          <div class="hero-card-foot">
+            <h2 class="hero-card-title">Latest release</h2>
+            <p class="hero-card-desc">Template matching, OCR, CSV/XLSX steps, and multi-tab workflows. <strong data-download-filename>imageactionbot_setup.exe</strong></p>
+            <a class="btn btn-primary full js-download-link" data-download-link href="#" target="_blank" rel="noopener noreferrer">Download setup</a>
+          </div>
         </aside>
+      </div>
+    </section>
+
+    <section id="screenshots" class="section" aria-labelledby="screenshots-heading">
+      <div class="container">
+        <h2 id="screenshots-heading">Inside the app</h2>
+        <p class="section-intro">Real screens from the Windows desktop app: configuring steps, viewing output, and managing workflows.</p>
+        <div class="screenshot-gallery">
+          <figure class="shot-card">
+            <img src="./assets/ImageActionBot_StepSetup.png" width="772" height="825" alt="Step setup panel: choosing action type, targets, and options for an automation step" loading="lazy" decoding="async">
+            <figcaption>Step setup — configure each action (click, type, OCR, wait, and more).</figcaption>
+          </figure>
+          <figure class="shot-card">
+            <img src="./assets/ImageActionBot_output.png" width="737" height="782" alt="Run output or log view showing automation results and status messages" loading="lazy" decoding="async">
+            <figcaption>Output — see what ran, status, and results at a glance.</figcaption>
+          </figure>
+          <figure class="shot-card">
+            <img src="./assets/ImageActionBot_Workflow.png" width="331" height="467" alt="Workflow overview or bundle view for saved automation flows" loading="lazy" decoding="async">
+            <figcaption>Workflow — organize and run saved flows.</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
