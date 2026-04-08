@@ -2,16 +2,23 @@
   "name": "ImageActionBot",
   "short_name": "ImageActionBot",
   "description": "Image matching desktop automation software for Windows.",
-  "start_url": "/",
+  "start_url": "https://www.imageactionbot.com/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#f5f8f6",
   "theme_color": "#1f7a43",
   "icons": [
     {
-      "src": "/iab.png",
+      "src": "https://www.imageactionbot.com/iab.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
+    },
+    {
+      "src": "https://www.imageactionbot.com/iab.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }
