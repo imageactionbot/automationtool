@@ -329,6 +329,22 @@ h3 {
   word-break: break-all;
 }
 
+.trust-closing {
+  margin: 1.75rem 0 0;
+  max-width: 68ch;
+  padding: 1rem 1.15rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line-strong);
+  background: linear-gradient(180deg, #fff 0%, var(--surface-2) 100%);
+  color: var(--text-soft);
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+.simple-flow-cards .card h3 {
+  color: var(--brand-3);
+}
+
 .hero-card {
   background: linear-gradient(180deg, #ffffff 0%, var(--surface-2) 100%);
   border: 1px solid var(--line);
