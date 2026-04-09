@@ -1,0 +1,12 @@
+{
+  "title": "Support Developer",
+  "updated_at": "2026-04-09T20:20:00Z",
+  "coins": [
+    {
+      "code": "BTC",
+      "network": "Bitcoin",
+      "address": "bc1q6gfppffsgpa8gd3eyquf56g5frdv4chjqdgxrr",
+      "qr_url": "https://imageactionbot.com/assets/btc-qr.png"
+    }
+  ]
+}
