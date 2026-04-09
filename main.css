@@ -670,7 +670,9 @@ th {
 }
 
 .footer-wrap > p:first-child {
-  max-width: 88ch;
+  max-width: 72ch;
+  margin-inline: auto;
+  text-align: center;
   font-size: 0.95rem;
 }
 
