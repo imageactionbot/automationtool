@@ -16,9 +16,9 @@ Example:
 ```json
 {
   "version": "1.0.0",
-  "file_name": "imageactionbot_setup.exe",
-  "download_url": "https://your-link/imageactionbot_setup.exe",
-  "last_updated": "2026-04-03"
+  "file_name": "ImageActionBot_Setup.exe",
+  "download_url": "https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup.exe",
+  "last_updated": "2026-04-09"
 }
 ```
 

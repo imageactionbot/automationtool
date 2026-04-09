@@ -2,11 +2,11 @@
   "use strict";
 
   var FALLBACK = {
-    product_name: "imageactionbot",
+    product_name: "ImageActionBot",
     version: "1.0.0",
-    file_name: "imageactionbot_setup.exe",
+    file_name: "ImageActionBot_Setup.exe",
     download_url: "https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup.exe",
-    last_updated: "2026-04-03"
+    last_updated: "2026-04-09"
   };
   var currentRelease = Object.assign({}, FALLBACK);
   var hasBoundDownloadHandler = false;
@@ -83,7 +83,7 @@
         var objectUrl = URL.createObjectURL(blob);
         var link = document.createElement("a");
         link.href = objectUrl;
-        link.download = fileName || "imageactionbot_setup.exe";
+        link.download = fileName || "ImageActionBot_Setup.exe";
         document.body.appendChild(link);
         link.click();
         link.remove();
@@ -103,7 +103,7 @@
       var href = link.getAttribute("href") || "";
       if (!href || href === "#") return;
       event.preventDefault();
-      var fileName = link.getAttribute("download") || currentRelease.file_name || "imageactionbot_setup.exe";
+      var fileName = link.getAttribute("download") || currentRelease.file_name || "ImageActionBot_Setup.exe";
       forceDownload(href, fileName).catch(function () {
         // Cross-origin/CORS or blocked fetch: use direct link fallback.
         window.open(href, "_blank", "noopener,noreferrer");

@@ -1,7 +1,7 @@
 {
   "name": "ImageActionBot",
   "short_name": "ImageActionBot",
-  "description": "Image matching desktop automation software for Windows.",
+  "description": "Free automation for Windows: image matching, OCR, and workflow desktop software by ImageActionBot.",
   "start_url": "https://www.imageactionbot.com/",
   "scope": "/",
   "display": "standalone",
