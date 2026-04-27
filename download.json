@@ -3,9 +3,10 @@
   "version": "1.0.3",
   "file_name": "ImageActionBot_Setup.exe",
   "download_url": "https://pub-7df420d78ae8472e9817557d4ae9fd10.r2.dev/ImageActionBot_Setup.exe",
-  "last_updated": "2026-04-09",
+  "last_updated": "2026-04-27",
   "changelog": [
+    "Release 1.0.3: Windows + Android automation combo, optimized no-code workflow controls",
     "Installer: ImageActionBot_Setup.exe via Cloudflare R2 (stable public URL)",
-    "Site copy and SEO: free automation positioning; release metadata single-sourced here"
+    "Founder and contact refreshed: Avinash Chauhan, imageactionbot@gmail.com"
   ]
 }

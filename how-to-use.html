@@ -19,7 +19,7 @@
   })(window,document,'script','dataLayer','GTM-5KLS38PQ');</script>
   <!-- End Google Tag Manager -->
   <title>How to Use ImageActionBot | Free automation software guide</title>
-  <meta name="description" content="How to use ImageActionBot — free automation software for Windows: install, template images, OCR, document layouts, CSV/XLSX, tuning, troubleshooting.">
+  <meta name="description" content="How to use ImageActionBot — free automation software for Windows and Android: install, template images, data workflows, CSV/XLSX, tuning, and troubleshooting.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="theme-color" content="#1f7a43">
   <meta name="author" content="ImageActionBot Technologies">
@@ -28,7 +28,7 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
   <meta property="og:title" content="How to Use ImageActionBot | Free automation software">
-  <meta property="og:description" content="Free automation software for Windows — full guide: image matching, OCR, CSV/XLSX, document layouts, ImageActionBot.">
+  <meta property="og:description" content="Free automation software for Windows and Android — full guide: image matching, data workflows, CSV/XLSX, and production-ready execution.">
   <meta property="og:url" content="https://www.imageactionbot.com/how-to-use.html">
   <meta property="og:image" content="https://www.imageactionbot.com/iab.png">
   <meta property="og:image:alt" content="ImageActionBot automation guide cover image">
@@ -66,7 +66,7 @@
       "about": [
         "Free desktop automation",
         "Image matching",
-        "OCR workflow",
+        "Android automation workflow",
         "CSV XLSX automation",
         "Document layout extraction"
       ]
@@ -104,10 +104,10 @@
       <div class="container">
         <p class="badge">Free automation handbook · Windows</p>
         <h1>How to use ImageActionBot like a power user</h1>
-        <p class="lead">You do <strong>not</strong> need to code. This guide takes you from first install to advanced workflows — template images, OCR, and spreadsheet-driven steps — so repetitive desktop work becomes fast and reliable.</p>
+        <p class="lead">You do <strong>not</strong> need to code. This guide takes you from first install to advanced workflows — template images, Android + Window modes, and spreadsheet-driven steps — so repetitive work becomes fast and reliable.</p>
         <div class="release-line">
           <span>Release: <strong data-download-version>1.0.0</strong></span>
-          <span>Last updated: <strong data-download-date>2026-04-09</strong></span>
+          <span>Last updated: <strong data-download-date>2026-04-27</strong></span>
         </div>
       </div>
     </section>
@@ -129,7 +129,7 @@
         <h2>2) Build your first reliable workflow</h2>
         <ol>
           <li>Capture a template image from your target screen.</li>
-          <li>Define steps: click, type, wait, OCR-read, and conditional action.</li>
+          <li>Define steps: click, type, key, scroll, wait, and conditional action.</li>
           <li>Tune execution delay and confidence thresholds.</li>
           <li>Run a short test before full production execution.</li>
         </ol>
@@ -144,8 +144,8 @@
           <li><strong>Light Edition UI:</strong> clean English interface with Excel-style green/white visual hierarchy.</li>
           <li><strong>Multi-tab projects:</strong> keep different automations separated, reducing accidental edits in active jobs.</li>
           <li><strong>Live preview overlay:</strong> monitor running state, status messages, and progress without switching windows.</li>
-          <li><strong>EasyOCR + anchor snip:</strong> detect a known image and OCR a region relative to its corner for better control.</li>
-          <li><strong>Document layout engine:</strong> scan straighten, reusable field snips, and layout-based OCR value extraction.</li>
+          <li><strong>Android + Window execution:</strong> use one app for desktop and mobile automation workflows.</li>
+          <li><strong>Workflow stability tools:</strong> reliable trigger logic, retries, loop controls, and run-state visibility.</li>
           <li><strong>Data import:</strong> CSV/XLSX headers map to step names for fast bulk input workflows.</li>
           <li><strong>Bundle portability:</strong> save/load workflow bundles to move processes between systems quickly.</li>
         </ul>
@@ -174,14 +174,14 @@
           <li>Build and test your workflow in a source environment.</li>
           <li>Export it as an IAB workflow bundle file.</li>
           <li>Transfer the file to the target machine or teammate.</li>
-          <li>Import the IAB file and verify anchors, OCR regions, and data mappings.</li>
+          <li>Import the IAB file and verify anchors, target actions, and data mappings.</li>
           <li>Run a dry test batch before production execution.</li>
         </ol>
 
         <h3>Best-practice checks before production</h3>
         <ul>
           <li><strong>Image matching reliability:</strong> tune confidence and offset click for dynamic UI states.</li>
-          <li><strong>OCR + anchor stability:</strong> validate extraction regions relative to stable visual anchors.</li>
+          <li><strong>Anchor stability:</strong> validate action points relative to stable visual anchors.</li>
           <li><strong>CSV/XLSX mappings:</strong> ensure column names and step variables match exactly.</li>
           <li><strong>Document layouts:</strong> re-check template alignment if scans/layouts differ per machine.</li>
           <li><strong>Environment parity:</strong> resolution, scaling, and application versions should be comparable.</li>
@@ -212,12 +212,12 @@
 
     <section class="section alt">
       <div class="container prose">
-        <h2>4) OCR and document-driven automation</h2>
+        <h2>4) Android and cross-app automation</h2>
         <ul>
-          <li>Keep OCR regions tightly scoped for better text accuracy.</li>
-          <li>Apply text normalization after OCR (trim, replace, cleanup).</li>
-          <li>After mapping field ROIs in document layouts, run a test batch.</li>
-          <li>For high-value fields, keep a manual confirmation fallback.</li>
+          <li>Enable Android mode only after device authorization is complete.</li>
+          <li>Validate tap/swipe targets on the real device screen before long runs.</li>
+          <li>Keep one dry-run batch for every target app update.</li>
+          <li>For high-value actions, keep manual confirmation fallback.</li>
         </ul>
       </div>
     </section>
@@ -258,9 +258,9 @@
                 <td>Use stronger anchor and calibrated offset</td>
               </tr>
               <tr>
-                <td>OCR incorrect text</td>
-                <td>Noisy region</td>
-                <td>Tight ROI, better contrast, post-clean text</td>
+                <td>Android action misses target</td>
+                <td>UI shift or stale anchor</td>
+                <td>Re-capture anchor, retune offset, re-test in Android mode</td>
               </tr>
               <tr>
                 <td>Slow run speed</td>
@@ -287,7 +287,7 @@
 
   <footer class="site-footer">
     <div class="container footer-wrap">
-      <p><strong>ImageActionBot</strong> — Free automation software for Windows: image matching, OCR, and CSV/XLSX workflows.</p>
+      <p><strong>ImageActionBot</strong> — Free automation software for Windows and Android: image matching, step workflows, and CSV/XLSX execution.</p>
       <div class="footer-links">
         <a href="./about.html">About</a>
         <a href="./contact.html">Contact</a>
