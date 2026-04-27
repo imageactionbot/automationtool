@@ -31,7 +31,7 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
   <meta property="og:title" content="ImageActionBot | Free Windows and Android automation software">
-  <meta property="og:description" content="Image matching based automation for Windows and Android workflows. No-code steps, data import, and reliable run controls.">
+  <meta property="og:description" content="Image matching based automation for Windows and Android workflows. No-code steps and reliable run controls.">
   <meta property="og:url" content="https://www.imageactionbot.com/">
   <meta property="og:site_name" content="ImageActionBot">
   <meta property="og:image" content="https://www.imageactionbot.com/assets/ImageActionBot_UI.png">
@@ -82,7 +82,7 @@
       "featureList": [
         "Image anchor matching with adjustable confidence",
         "Find image and click automation with offsets",
-        "CSV and XLSX data import for bulk form filling",
+        "Structured no-code workflow execution",
         "Android ADB-based mobile automation controls",
         "Multi-tab workflow builder with reusable automation bundles"
       ]
@@ -170,7 +170,7 @@
           "name": "Can I combine image matching with auto fill?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. ImageActionBot allows complete automation workflows: find and click with image matching, type values, run key actions, and fill forms from CSV/XLSX data."
+            "text": "Yes. ImageActionBot allows complete automation workflows: find and click with image matching, type values, run key actions, and continue flows across Windows and Android modes."
           }
         },
         {
@@ -178,7 +178,7 @@
           "name": "What automation actions are available after image matching?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "After image matching finds an image, you can automate: left click, right click, double click, mouse hover, typing text, key actions, waiting, conditional branching, and workflow execution with data from CSV/XLSX files."
+            "text": "After image matching finds an image, you can automate: left click, right click, double click, mouse hover, typing text, key actions, waiting, conditional branching, and full workflow execution."
           }
         },
         {
@@ -194,7 +194,7 @@
           "name": "How should I use IAB workflow bundles safely?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Export a tested workflow as an IAB bundle, import it on the target machine, then validate image anchors and CSV/XLSX mappings before production. Always run a dry test first and retune if UI layout or resolution differs."
+            "text": "Export a tested workflow as an IAB bundle, import it on the target machine, then validate image anchors before production. Always run a dry test first and retune if UI layout or resolution differs."
           }
         }
       ]
@@ -232,7 +232,7 @@
       <div class="container hero-grid">
         <div>
           <p class="badge">No coding · Point at the screen · Free Windows automation</p>
-          <h1>Automate Windows the easy way — no code, just pictures of what you want done</h1>
+          <h1>Automate Windows and Android the easy way — no code, just pictures of what you want done</h1>
           <p class="lead">
             If you can <strong>see</strong> a button, field, or icon on your screen, you can automate it. <strong>ImageActionBot</strong> is built so you <strong>never write scripts</strong>: load a <strong>template image</strong>, choose <strong>click, type, key, or scroll</strong>, and line up steps like a checklist. Your work stays <strong>on your PC</strong>, with a clear app window, <strong>Run All / Test</strong>, and an <strong>Emergency stop (Esc)</strong> while a run is active — the same kind of control we expect from serious desktop tools.
           </p>
@@ -240,7 +240,7 @@
             <a class="btn btn-primary js-download-link" data-download-link href="#" target="_blank" rel="noopener noreferrer">Free download for Windows</a>
             <a class="btn btn-ghost" href="./how-to-use.html">Step-by-step guide</a>
           </div>
-          <p class="hero-trust" role="note">No credit card · No programming · Local-first workflows · Installer <span class="mono">ImageActionBot_Setup.exe</span></p>
+          <p class="hero-trust" role="note">Free tool · No programming · Local-first workflows · Installer <span class="mono">ImageActionBot_Setup.exe</span></p>
           <div class="release-line">
             <span>Release: <strong data-download-version>1.0.0</strong></span>
             <span>Last updated: <strong data-download-date>2026-04-27</strong></span>
@@ -252,7 +252,7 @@
           </figure>
           <div class="hero-card-foot">
             <h2 class="hero-card-title">Latest release</h2>
-            <p class="hero-card-desc">Visual automation: Windows + Android workflow combo, template images, CSV/XLSX, multi-tab workflows — no code. <strong data-download-filename>ImageActionBot_Setup.exe</strong></p>
+            <p class="hero-card-desc">Visual automation: Windows + Android workflow combo, template images, multi-tab workflows — no code. <strong data-download-filename>ImageActionBot_Setup.exe</strong></p>
             <a class="btn btn-primary full js-download-link" data-download-link href="#" target="_blank" rel="noopener noreferrer">Download setup</a>
           </div>
         </aside>
@@ -338,7 +338,7 @@
           </article>
           <article class="feature-card">
             <h3><span class="feature-icon">📝</span>Find Image -> Auto Fill Forms</h3>
-            <p>Import data from CSV/XLSX files. Detect form fields using image matching, then auto fill automatically. Bulk form filling for thousands of records.</p>
+            <p>Detect form fields using image matching, then auto fill automatically for repeated operations.</p>
             <p class="feature-meta"><strong>Use case:</strong> Customer registration form - name field image, email field image, submit button image - all auto detected and auto filled.</p>
           </article>
           <article class="feature-card">
@@ -374,8 +374,8 @@
             <p>Switch between desktop and Android automation in the same workflow tab with consistent run controls and status feedback.</p>
           </article>
           <article class="card">
-            <h3>CSV/XLSX Data Mapping</h3>
-            <p>Map spreadsheet headers to step names for bulk field entry. Built for repetitive data operations and scalable document processing jobs.</p>
+            <h3>Run/Test + Emergency Control</h3>
+            <p>Use Run All for full execution, Test for selected steps, and Esc emergency stop while automation is active.</p>
           </article>
           <article class="card">
             <h3>Reusable Bundle Deployment</h3>
@@ -402,7 +402,7 @@
           <li><strong>Click:</strong> Left click, right click, double click, hover</li>
           <li><strong>Typing:</strong> Type text, press special keys</li>
           <li><strong>Auto Fill:</strong> Automatically fill form fields</li>
-          <li><strong>Data Import:</strong> Use CSV/XLSX data to perform actions</li>
+          <li><strong>Flow Controls:</strong> Use trigger, delay, retries, and step ordering to perform stable actions</li>
           <li><strong>Wait:</strong> Wait until image appears on screen</li>
           <li><strong>Conditional Branching:</strong> If image found do X, else do Y</li>
         </ul>
@@ -458,7 +458,7 @@
           <div class="panel">
             <h3>Support when you go deeper</h3>
             <ul>
-              <li><strong>How to Use guide:</strong> Install, anchors, Windows/Android modes, CSV/XLSX, deployment, troubleshooting.</li>
+              <li><strong>How to Use guide:</strong> Install, anchors, Windows/Android modes, deployment, troubleshooting.</li>
               <li><strong>Predictable runs:</strong> Run All, Test selected steps, reset, and Esc emergency stop while automation is active.</li>
               <li><strong>FAQs + structured data:</strong> Common questions on-page and in search-friendly markup.</li>
             </ul>
@@ -488,7 +488,7 @@
         
         <h3>📋 Data Entry Automation</h3>
         <ul>
-          <li>Import customer data from CSV file</li>
+          <li>Import customer data from your workflow source</li>
           <li>Find name field image → type customer name</li>
           <li>Find email field image → type customer email</li>
           <li>Find phone field image → type customer phone</li>
@@ -530,11 +530,11 @@
           </details>
           <details>
             <summary>Can I combine image matching with auto fill?</summary>
-            <p><strong>Yes.</strong> ImageActionBot allows complete automation workflows. Use image matching to find and click target UI, then auto fill values from workflow variables or CSV/XLSX rows in the same run.</p>
+            <p><strong>Yes.</strong> ImageActionBot allows complete automation workflows. Use image matching to find and click target UI, then auto fill values from workflow steps in the same run.</p>
           </details>
           <details>
             <summary>What automation actions are available after image matching?</summary>
-            <p>After image matching finds an image, you can automate: left click, right click, double click, mouse hover, typing text, key actions, copying to clipboard, waiting for element, conditional branching, and complete workflow execution with data from CSV/XLSX files.</p>
+            <p>After image matching finds an image, you can automate: left click, right click, double click, mouse hover, typing text, key actions, copying to clipboard, waiting for element, conditional branching, and complete workflow execution.</p>
           </details>
           <details>
             <summary>Is this free? What are the system requirements?</summary>
@@ -556,7 +556,7 @@
             <summary>How should I use IAB workflow bundles safely?</summary>
             <p>
               Export only tested workflows, import on the target system, then validate image anchors,
-              and CSV/XLSX mappings before production. Run a dry test first, especially if resolution, scaling, or UI
+              before production. Run a dry test first, especially if resolution, scaling, or UI
               layout differs across machines.
             </p>
           </details>
@@ -591,7 +591,7 @@
 
   <footer class="site-footer">
     <div class="container footer-wrap">
-      <p><strong>ImageActionBot</strong> — Free automation software for Windows and Android: image matching, step workflows, and CSV/XLSX execution.</p>
+      <p><strong>ImageActionBot</strong> — Free tool for Windows and Android automation with image matching and step workflows.</p>
       <div class="footer-links">
         <a href="./about.html">About</a>
         <a href="./contact.html">Contact</a>
