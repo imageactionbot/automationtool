@@ -417,8 +417,9 @@ h3 {
 .shot-card img {
   display: block;
   width: 100%;
-  height: auto;
-  background: #0f2418;
+  height: clamp(180px, 24vw, 290px);
+  object-fit: contain;
+  background: #f2f7f4;
 }
 
 .shot-card figcaption {

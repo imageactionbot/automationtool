@@ -19,7 +19,7 @@
   })(window,document,'script','dataLayer','GTM-5KLS38PQ');</script>
   <!-- End Google Tag Manager -->
   <title>How to Use ImageActionBot | Free automation software guide</title>
-  <meta name="description" content="How to use ImageActionBot — free automation software for Windows and Android: install, template images, run controls, tuning, and troubleshooting.">
+  <meta name="description" content="How to use ImageActionBot — Windows automation app with Android USB debugging setup: install, template images, run controls, connection troubleshooting.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="theme-color" content="#1f7a43">
   <meta name="author" content="ImageActionBot Technologies">
@@ -102,9 +102,9 @@
   <main id="main">
     <section class="hero guide-hero">
       <div class="container">
-        <p class="badge">Free automation handbook · Windows</p>
+        <p class="badge">Windows app guide · Android via USB debugging</p>
         <h1>How to use ImageActionBot like a power user</h1>
-        <p class="lead">You do <strong>not</strong> need to code. This guide takes you from first install to advanced workflows — template images, Android + Window modes, and spreadsheet-driven steps — so repetitive work becomes fast and reliable.</p>
+        <p class="lead">You do <strong>not</strong> need to code. This guide takes you from first install to advanced workflows — template images, Window mode execution, and Android automation via USB debugging — so repetitive work becomes fast and reliable.</p>
         <div class="release-line">
           <span>Release: <strong data-download-version>1.0.0</strong></span>
           <span>Last updated: <strong data-download-date>2026-04-27</strong></span>
@@ -218,6 +218,27 @@
           <li>Validate tap/swipe targets on the real device screen before long runs.</li>
           <li>Keep one dry-run batch for every target app update.</li>
           <li>For high-value actions, keep manual confirmation fallback.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="android-usb-debugging">
+      <div class="container prose">
+        <h2>4.5) Android USB debugging setup (when mobile controls are not visible)</h2>
+        <ol>
+          <li>On Android: enable <strong>Developer options</strong>.</li>
+          <li>Enable <strong>USB debugging</strong>.</li>
+          <li>Connect phone with a data-capable USB cable.</li>
+          <li>Accept the phone prompt: <strong>Allow USB debugging</strong> (authorize this computer).</li>
+          <li>In ImageActionBot switch to <strong>Android mode</strong> and verify status/controls.</li>
+        </ol>
+        <h3>Quick checks if Android mode is not showing</h3>
+        <ul>
+          <li>Reconnect cable and unlock phone screen.</li>
+          <li>Disable/re-enable USB debugging once, then reconnect.</li>
+          <li>Remove old USB debugging authorizations and re-allow prompt.</li>
+          <li>Use original/OEM cable where possible (charge-only cables fail).</li>
+          <li>Reopen ImageActionBot after device is authorized.</li>
         </ul>
       </div>
     </section>
